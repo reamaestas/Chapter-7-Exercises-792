@@ -18,7 +18,14 @@ while astronauts_aboard <= 1 or astronauts_aboard > 7:
   
 # c. Use a final loop to monitor the fuel status and the altitude of the shuttle. Each iteration, decrease the fuel level by 100 units for each astronaut aboard. Also, increase the altitude by 50 kilometers.
 
+fuel_status = 0
+altitude_status = shuttle_altitude + 50
 
+for fuel_status in range(starting_fuel, 0, astronauts_aboard*-100):
+	print("Fuel Status: ", fuel_status)
+
+for altitude_status in range(0, shuttle_altitude, 50):
+	print("Altitude Status: ", altitude_status)
 
 # Exercise #5: Print the result with the phrase, The shuttle gained an altitude of ___ km and has ___ kg of fuel left. Fill in the blanks with the altitude and fuel level values.
 
